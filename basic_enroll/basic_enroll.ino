@@ -18,12 +18,12 @@ void setup() {
   delay(1000);
   Keyboard.print(email);  // Login
   Keyboard.write(176);
-  delay(1500);
+  delay(1500);            // Needs to be double-checked
   Keyboard.print(password);
   Keyboard.write(176);
 }
 
-                     // Show that the code is finished executing
+                     // Show that the code is finished executing, keep from executing again
 void loop() {
   digitalWrite(17, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(100);               // wait for a second
