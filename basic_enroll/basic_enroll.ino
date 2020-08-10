@@ -8,7 +8,7 @@
 
 void setup() {
   pinMode(17, OUTPUT);
-  delay(1000);
+  delay(1000);         // Give device time to reconginze device as native keyboard
   Keyboard.begin();    // Enter Enrollment
   Keyboard.press(128);
   Keyboard.press(130);
@@ -23,9 +23,10 @@ void setup() {
   Keyboard.write(176);
 }
 
+                     // Show that the code is finished executing
 void loop() {
   digitalWrite(17, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(100);                       // wait for a second
+  delay(100);               // wait for a second
   digitalWrite(17, LOW);    // turn the LED off by making the voltage LOW
-  delay(100);                       // wait for a second
+  delay(100);               // wait for a second
 }
